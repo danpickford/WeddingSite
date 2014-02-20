@@ -29,16 +29,14 @@ body > .container {
 }
 
 .container {
-  margin-right:0px;
+  margin-right: 0px;
   margin-left: 0px;
+  width:100%;
 }
-.container .text-muted {
-  margin: 20px 0;
-}
-
-#footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+.inner-container
+{
+  margin-right:10px;
+  margin-left: 10px;
 }
 
 code {
