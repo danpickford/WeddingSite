@@ -1,22 +1,23 @@
 ﻿/* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
-  height:100%;
+    position: relative;
+    min-height: 100%;
+    height: 100%;
 }
+
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  
+    /* Margin bottom by footer height */
+    height: 100%;
 }
+
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
 }
 
 
@@ -25,29 +26,34 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 0px 0;
+    padding: 0;
 }
 
 .container {
-  margin-right: 0px;
-  margin-left: 0px;
-  width:100%;
-}
-.inner-container
-{
-  margin-right:10px;
-  margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 code {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 #slide_1 {
-  background-image: url('../img/background_1.png');
-  background-repeat:no-repeat;
-  background-size:cover;
-  height:100%;
-  min-height: 100%;
-  width:100%;
+    background-image: url('../img/background_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+#slide_2 {
+    background-image: url('../img/background_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
 }
