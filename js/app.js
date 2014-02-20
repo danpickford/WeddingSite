@@ -1,1 +1,3 @@
-﻿//some app code
+﻿$('#example-basic').waypoint(function () {
+    alert('Basic example callback triggered.');
+});
