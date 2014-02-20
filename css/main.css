@@ -8,10 +8,9 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background-image: url('../img/main_1.png');
+  background-image: url('../img/background_1.png');
   background-repeat:no-repeat;
   background-size:cover;
-  
 }
 #footer {
   position: absolute;
