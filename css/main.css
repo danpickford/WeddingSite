@@ -8,9 +8,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background-image: url('../img/background_1.png');
-  background-repeat:no-repeat;
-  background-size:cover;
+  
 }
 #footer {
   position: absolute;
@@ -27,8 +25,12 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 60px 0px 0;
+}
 
+.container {
+  margin-right:0px;
+  margin-left: 0px;
 }
 .container .text-muted {
   margin: 20px 0;
@@ -42,7 +44,12 @@ body > .container {
 code {
   font-size: 80%;
 }
-.main-content {
 
-
+#slide_1 {
+  background-image: url('../img/background_1.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
 }
