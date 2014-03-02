@@ -33,6 +33,7 @@ function init()
 	    $('html,body').animate({
 	        scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
 	    }, mstime);
+	    setActivePage(dataslide);
 	}
 
     //When the user clicks on the button, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
@@ -41,5 +42,17 @@ function init()
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide, 2000);
     });
+
+    $('.data-slide-link').click(function(e) {
+		e.preventDefault();
+		dataslide = $(this).attr('data-slide');
+		goToByScroll(dataslide, 2000);
+    });
+}
+
+function setActivePage(dataslide)
+{
+	$('li').removeClass('active');
+	$('.data-slide-link[data-slide="'+dataslide+'"]').parent('li').addClass('active');
 }
 
