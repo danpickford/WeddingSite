@@ -40,8 +40,18 @@ code {
     font-size: 80%;
 }
 
-#slide_1 {
+#slide1 {
     background-image: url('../img/background_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    
+}
+
+#slide2 {
+    background-image: url('../img/background_2.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -49,11 +59,10 @@ code {
     width: 100%;
 }
 
-#slide_2 {
-    background-image: url('../img/background_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
+.arrow {
+    display: block;
+    
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
 }
