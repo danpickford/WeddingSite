@@ -13,7 +13,7 @@ body {
     overflow-y:hidden;
 }
 .bold{
-font-weight: bold;
+    font-weight: bold;
 }
 
 #footer {
@@ -26,8 +26,10 @@ font-weight: bold;
 }
 
 .jumbotron {
-
-padding-top:10px;
+    padding-top:10px;
+}
+.jumbotron h1 {
+    font-size:38px;
 }
 
 
