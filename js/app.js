@@ -1,9 +1,4 @@
-﻿
-//var easing = require('easing');
-
-
-
-$(function() {
+﻿$(function() {
 	init();
 });
 
@@ -27,8 +22,7 @@ function init()
 	    }
 	});
 
-	//Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
-	//easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
+	//Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. 
 	function goToByScroll(dataslide, mstime) {
 	    $('html,body').animate({
 	        scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
@@ -52,7 +46,7 @@ function init()
 
 function setActivePage(dataslide)
 {
-	$('li').removeClass('active');
-	$('.data-slide-link[data-slide="'+dataslide+'"]').parent('li').addClass('active');
+    $('li').removeClass('active');
+	$('.data-slide-link[data-slide="'+dataslide+'"]').parents('li:last').addClass('active');
 }
 

@@ -11,7 +11,6 @@
     <link href="node_modules/twitter-bootstrap/docs/assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet" />
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -19,43 +18,66 @@
     <![endif]-->
 </head>
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="tableplan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;</button>
+                    <h4 class="modal-title">
+                        Shhhh....</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        We have to keep something a secret!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">
+                        OK. I got it!</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
                 </button>
                 <!--<a class="navbar-brand" href="#"></a>-->
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#" class="data-slide-link" data-slide="1">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Ceremony <b class="caret"></b></a>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown">Our
+                        Day <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" class="data-slide-link" data-slide="2">Order of the Day</a></li>
-                            <li><a href="#">Children</a></li>
-                            <li><a href="#">Dress Code</a></li>
-                            <li><a href="#">Table plan</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="3">Guest information</a></li>
+                            <li><a data-toggle="modal" href="#tableplan">Table plan</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">The Venue</li>
-                            <li><a href="#">Swallows Oast</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="4">Swallows Oast</a></li>
                         </ul>
                     </li>
-                    <li><a href="#rsvp">RSVP</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#contact">Photos</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Helpful Info <b class="caret"></b></a>
+                    <li><a href="#" class="data-slide-link" data-slide="5">RSVP</a></li>
+                    <li><a href="#" class="data-slide-link" data-slide="6">Contact Us</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Helpful
+                        Info <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Gift Ideas</a></li>
-                            <li><a href="#">Accommodation</a></li>
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Taxis</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="7"><b>Important Info!</b></a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="8">Gift Ideas</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="9">Photos</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="10">Accommodation</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="11">Travel</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="12">Taxis</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -63,34 +85,86 @@
             <!--/.nav-collapse -->
         </div>
     </div>
-
     <!-- Begin page content -->
     <div class="container">
-
         <div id="slide1" class="slide" data-slide="1">
-            <div style="margin-top: 70px;" class="col-xs-12 col-sm-9">
-
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-7">
                 <div class="jumbotron">
-                    <h1>Kath and Mark's Big day!</h1>
-                    <p>Welcome to our wedding. We can't wait to spend our special day with you!</p>
-                    <p>Please click on any of the handy links to find out more about our big day.</p>
+                    <h1>
+                        Kath and Mark's Big day!</h1>
                     <p>
-                        If you have any questions we haven't answered please contact us using the links above.<br />
+                        Welcome to our wedding web site. We can't wait to spend our special day with you!</p>
+                    <p>
+                        We're delighted to be having our wedding at <b>Swallows Oast, Ticehurst on Friday, 27th
+                            June 2014</b></p>
+                    <p>
+                        Please click on any of the handy links to find out more about our big day.</p>
+                    <p>
+                        If you have any questions we haven't answered please contact us using the links
+                        above.<br />
                         Love Kath and Mark
                     </p>
-
+                     <h1>
+                        RSVP!</h1>
+                    <p>
+                        We would really appreciate it if you could RSVP as soon as possible, to help us
+                        with our planning! <br />To tell us whether you can come, please click <a class="btn btn-primary btn-large data-slide-link"
+                            data-slide="5">here</a>
+                    </p>
                 </div>
             </div>
-            <a href="#" class="btn btn-default arrow" data-slide="2"><span class="glyphicon glyphicon-arrow-down"></span></a>
+            
+            <div style="margin-top: 70px;opacity: 0.9" class="col-sm-5">
+                <div class="jumbotron">
+                    
+                    <h1>
+                        Shuttle Bus</h1>
+                    <p>
+                        A reminder that we have laid on a 7 seater taxi (on us!) for the following times:</p>
+                    <ul>
+                        <li class="bold">12:45 - 13:45</li>
+                        <li class="bold">18:00 - 20:00</li>
+                        <li class="bold">22:00 - 00:30</li>
+                        </ul>
+                    <p>
+                        This covers any trips made between the venue and the local area (any outside this
+                        will incur a fare!) Please let us know if you need a lift by clicking <a class="btn btn-primary btn-large data-slide-link" data-slide="6">
+                            here</a> 
+                    </p>
+                    
+                </div>
+            </div>
+            <div style="opacity: 0.9" class="col-sm-5">
+                <div class="jumbotron">
+                    
+                    <h1>
+                        Reminder of what to bring</h1>
+                    <p>
+                        <ul>
+                            <li>Umbrella</li>
+                            <li>Sensible shoes/wellies</li>
+                            <li>Sunscreen</li>
+                            <li>Sunglasses</li>
+                            <li>CASH (No card facilities!)</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <a href="#" class="btn btn-default arrow" data-slide="2"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
         </div>
         <div id="slide2" class="slide" data-slide="2">
             <div style="margin-top: 70px; opacity: 0.9" class="col-sm-6">
-
                 <div class="jumbotron">
-                    <h1>Order of the Day</h1>
-                    <p>What's happening when... </p>
-                    <p><span class="bold">Friday 27th June 2014</span></p>
-
+                    <h1>
+                        Order of the Day</h1>
+                    <p>
+                        What's happening when...
+                    </p>
+                    <p>
+                        <span class="bold">Friday 27th June 2014</span></p>
                     <ul>
                         <li>1:30pm
                             <br />
@@ -115,50 +189,243 @@
                             Evening snack time</li>
                         <li>11:30pm - 11:45pm<br />
                             Hometime, carriages await!</li>
-
                     </ul>
-
                 </div>
             </div>
             <div style="margin-top: 70px; opacity: 0.9" class="col-sm-6">
-
                 <div class="jumbotron">
-                    <h1>The next day </h1>
-                    <p><span class="bold">Saturday 28th June 2014</span></p>
-                    <p>Please collect any cars left at Swallows Oast by 11am</p>
-                    <p>If you wish to join us and some other guests staying at Dale Hill Hotel for breakfast, please let us know. <em>(this costs &pound; 10 per person</em></p>
+                    <h1>
+                        The next day
+                    </h1>
+                    <p>
+                        <span class="bold">Saturday 28th June 2014</span></p>
+                    <p>
+                        Please collect any cars left at Swallows Oast by 11am</p>
+                    <p>
+                        If you wish to join us and some other guests staying at Dale Hill Hotel for breakfast,
+                        please let us know. <em>(this costs &pound;10 per person)</em></p>
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d5016.779784719319!2d0.4174018011606883!3d51.04588820151486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x47df3e4fb461a429%3A0xe01ddc2604ae0f6f!2sSwallows+Oast%2C+Gibbs+Reed+Farm%2CPashley+Road%2C+Ticehurst%2C+East+Sussex+TN5+7HE%2C+United+Kingdom!3m2!1d51.041292999999996!2d0.425935!4m5!1s0x47df3e541a14a0a5%3A0xf3b62eeb01bec54!2sDale+Hill+Golf+Club%2C+Ticehurst%2C+Wadhurst%2C+East+Sussex+TN5+7DQ%2C+United+Kingdom!3m2!1d51.049347999999995!2d0.42382699999999995!5e0!3m2!1sen!2suk!4v1393963583558"
+                            width="100%" height="300px" frameborder="0" style="border: 0"></iframe>
+                    </p>
                 </div>
             </div>
-            <a href="#" class="btn btn-default arrow" data-slide="3"><span class="glyphicon glyphicon-arrow-down"></span></a>
+            <a href="#" class="btn btn-default arrow" data-slide="3"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
         </div>
         <div id="slide3" class="slide" data-slide="3">
             <div style="margin-top: 70px; opacity: 0.9" class="col-sm-6">
                 <div class="jumbotron">
-                    <h1>Children</h1>
-                    <p>Unfortunately we can only accommodate children from our close family, and the children that Kathryn cares for.</p>
-                    <p>We hope that this gives our friends that are parents the opportunity to relax, to let their hair down and really enjoy the day!</p>
-                    <p>For the children that are attending, there is a Willow maze, and slide to play on (as well as lots of open space to run around in!)</p>
-                    <p>If weather permits, there will also be a few games outside!</p>
-                    <p><em>Its advised to bring a change of clothes, and also possibly wellies incase needed as there's plenty of grass for the little ones to run around on, and we can never predict the British 'Summer' weather!</em></p>
+                    <h1>
+                        Children</h1>
+                    <p>
+                        Unfortunately we can only accommodate children from our close family, and the children
+                        that Kathryn cares for.</p>
+                    <p>
+                        We hope that this gives our friends that are parents the opportunity to relax, to
+                        let their hair down and really enjoy the day!</p>
+                    <p>
+                        For the children that are attending, there is a Willow maze, and slide to play on
+                        (as well as lots of open space to run around in!)</p>
+                    <p>
+                        If weather permits, there will also be a few games outside!</p>
+                    <p>
+                        <em>Its advised to bring a change of clothes, and also possibly wellies incase needed
+                            as there's plenty of grass for the little ones to run around on, as we can never
+                            predict the British 'Summer' weather!</em></p>
                 </div>
             </div>
-            <div style="margin-top: 70px;opacity: 0.9" class="col-sm-6">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-6">
                 <div class="jumbotron">
-                    <h1>Dress Code</h1>
-                   
+                    <h1>
+                        Dress Code</h1>
+                    <p>
+                        Smart Casual <em>(We're aiming for a relaxed day and want our guests to be comfortable!)</em></p>
                 </div>
             </div>
-
+            <div style="opacity: 0.9" class="col-sm-6">
+                <div class="jumbotron">
+                    <h1>
+                        What to bring</h1>
+                    <p>
+                        <ul>
+                            <li>Umbrella</li>
+                            <li>Sensible shoes/wellies</li>
+                            <li>Sunscreen</li>
+                            <li>Sunglasses</li>
+                            <li>CASH (No card facilities!)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="4"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide4" class="slide" data-slide="4">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Swallows Oast</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                        Directions?</h1>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="5"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide5" class="slide" data-slide="5">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-12">
+                <div class="jumbotron">
+                    <h1>
+                        RSVP</h1>
+                    <p>
+                        Please use the form below to let us know if you can make it!
+                        <br />
+                        <em>please also include any dietary requirements!</em>
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="6"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide6" class="slide" data-slide="6">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Contact Us</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                    </h1>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="7"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide7" class="slide" data-slide="7">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Important Information</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                    </h1>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="8"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide8" class="slide" data-slide="8">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Gift Ideas</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                    </h1>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="9"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide9" class="slide" data-slide="9">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Photos</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                    </h1>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="10"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide10" class="slide" data-slide="10">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Accommodation</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                    </h1>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="11"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide11" class="slide" data-slide="11">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Travel</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                    </h1>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default arrow" data-slide="12"><span class="glyphicon glyphicon-arrow-down">
+            </span></a>
+        </div>
+        <div id="slide12" class="slide" data-slide="12">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+                <div class="jumbotron">
+                    <h1>
+                        Taxis</h1>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
+                <div class="jumbotron">
+                    <h1>
+                    </h1>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/twitter-bootstrap/docs/assets/js/bootstrap.min.js"></script>
+    <script src="node_modules/twitter-bootstrap/docs/assets/js/bootstrap-modal.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/app.js"></script>
-
 </body>
 </html>

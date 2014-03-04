@@ -76,9 +76,80 @@ code {
     min-height: 100%;
     width: 100%;
 }
-
 #slide3 {
     background-image: url('../img/background_3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide4 {
+    background-image: url('../img/background_4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide5 {
+    background-image: url('../img/background_5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide6 {
+    background-image: url('../img/background_6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide7 {
+    background-image: url('../img/background_7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide8 {
+    background-image: url('../img/background_8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide9 {
+    background-image: url('../img/background_9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide10 {
+    background-image: url('../img/background_10.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide11 {
+    background-image: url('../img/background_11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+#slide12 {
+    background-image: url('../img/background_12.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -91,3 +162,4 @@ code {
     bottom: 0px;
     left: 50%;
 }
+
