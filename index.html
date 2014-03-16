@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <!-- Bootstrap core CSS -->
     <link href="node_modules/twitter-bootstrap/docs/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="node_modules/fancybox/css/jquery.fancybox.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,12 +69,12 @@
                         </ul>
                     </li>
                     <li><a href="#" class="data-slide-link" data-slide="5">RSVP</a></li>
-                    <li><a href="#" class="data-slide-link" data-slide="6">Contact Us</a></li>
+                    <li><a href="#" class="data-slide-link" data-slide="6">Have your say!</a></li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Helpful
                         Info <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" class="data-slide-link" data-slide="7"><b>Important Info!</b></a></li>
-                            <li><a href="#" class="data-slide-link" data-slide="8">Gift Ideas</a></li>
+                            <li><a href="#" class="data-slide-link" data-slide="8">Gifts</a></li>
                             <li><a href="#" class="data-slide-link" data-slide="9">Photos</a></li>
                             <li><a href="#" class="data-slide-link" data-slide="10">Accommodation</a></li>
                             <li><a href="#" class="data-slide-link" data-slide="11">Travel</a></li>
@@ -199,7 +200,7 @@
                         Please collect any cars left at Swallows Oast by 10am</p>
                     <p>
                         If you wish to join us and some other guests staying at Dale Hill Hotel for breakfast,
-                        please let us know. <em>(this costs &pound;10 per person)</em></p>
+                        please let us know. <em>(this costs &pound;12 per person)</em></p>
                     <p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d5016.779784719319!2d0.4174018011606883!3d51.04588820151486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x47df3e4fb461a429%3A0xe01ddc2604ae0f6f!2sSwallows+Oast%2C+Gibbs+Reed+Farm%2CPashley+Road%2C+Ticehurst%2C+East+Sussex+TN5+7HE%2C+United+Kingdom!3m2!1d51.041292999999996!2d0.425935!4m5!1s0x47df3e541a14a0a5%3A0xf3b62eeb01bec54!2sDale+Hill+Golf+Club%2C+Ticehurst%2C+Wadhurst%2C+East+Sussex+TN5+7DQ%2C+United+Kingdom!3m2!1d51.049347999999995!2d0.42382699999999995!5e0!3m2!1sen!2suk!4v1393963583558"
                             width="100%" height="300px" frameborder="0" style="border: 0"></iframe>
@@ -215,8 +216,7 @@
                     <h1>
                         Children</h1>
                     <p>
-                        Unfortunately we can only accommodate children from our close family, and the children
-                        that Kathryn cares for.</p>
+                        Unfortunately we can only accommodate children from our close family.</p>
                     <p>
                         We hope that this gives our friends that are parents the opportunity to relax, to
                         let their hair down and really enjoy the day!</p>
@@ -278,7 +278,7 @@ TN5 7HE
 </pre>
                     </p>
                     <p>
-                        Web: <a href="http://www.swallowsoast.co.uk" target="_blank">http://www.swallowsoast.co.uk</a>
+                        Web: <a class="reallink" href="http://www.swallowsoast.co.uk" target="_blank">http://www.swallowsoast.co.uk</a>
                     </p>
                     <p>
                         There is plenty of spaces to park at Swallows Oast. Please follow the signs for
@@ -286,12 +286,21 @@ TN5 7HE
                         on the gravel. You can safely leave your car at the venue overnight. <em>Although please
                             ensure you collect it again by 10am the next day!</em>
                     </p>
+                    <h2>
+                        Evening Bar</h2>
+                    <p>
+                        There is a bar at Swallows Oast, which will be stocked with assorted beers, ciders
+                        and spirits. However, there are <b>NO CARD FACILITIES.</b>
+                        <br />
+                        Therefore if you are intending to purchase drinks at the bar, please ensure you
+                        have sufficient <b>CASH </b>with you - the nearest cash point is around 4 miles
+                        away!</p>
                 </div>
             </div>
             <div style="margin-top: 70px;" class="col-sm-5">
                 <div class="jumbotron">
                     <h1>
-                        Map</h1>
+                        Getting there</h1>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2508.6387398976617!2d0.4259348!3d51.0412927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df3e4fb461a429%3A0xe01ddc2604ae0f6f!2sSwallows+Oast!5e0!3m2!1sen!2suk!4v1393968685774"
                         width="600" height="450" frameborder="0" style="border: 0"></iframe>
                 </div>
@@ -309,6 +318,34 @@ TN5 7HE
                         <br />
                         <em>please also include any dietary requirements!</em>
                     </p>
+                    <div style="width: 50%">
+                        <form role="form">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">
+                                Contact number/Email</label>
+                            <input type="text" class="form-control" id="contact" placeholder="Enter a contact number or email address!">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                Will you be attending?</label>
+                            <textarea id="message" placeholder="Please let us know if you can make it!" name="message"
+                                class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="diet">
+                                Dietary Requirements</label>
+                            <textarea id="diet" name="diet" placeholder="Enter any dietary requirements" class="form-control"
+                                rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">
+                            Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <a href="#" class="btn btn-default arrow" data-slide="6"><span class="glyphicon glyphicon-arrow-down">
@@ -318,38 +355,50 @@ TN5 7HE
             <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
                 <div class="jumbotron">
                     <h1>
-                        Contact Us</h1>
+                        Have your say!</h1>
                     <p>
-                        How to... Say howdy!
+                        How to help us!
                         <br />
                         Please get in touch either by email or through this site to say hello or ask any
                         questions that you may have:
                         <ul>
-                            <li>Mark: <a href="mailto:&#104;&#097;&#114;&#114;&#105;&#115;&#111;&#110;&#109;&#101;&#105;&#115;&#116;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+                            <li>Mark: <a class="reallink" href="mailto:&#104;&#097;&#114;&#114;&#105;&#115;&#111;&#110;&#109;&#101;&#105;&#115;&#116;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
                                 &#104;&#097;&#114;&#114;&#105;&#115;&#111;&#110;&#109;&#101;&#105;&#115;&#116;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
-                            <li>Kathryn: <a href="mailto:&#107;&#097;&#116;&#104;&#114;&#121;&#110;&#099;&#114;&#111;&#119;&#108;&#101;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+                            <li>Kathryn: <a class="reallink" href="mailto:&#107;&#097;&#116;&#104;&#114;&#121;&#110;&#099;&#114;&#111;&#119;&#108;&#101;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
                                 &#107;&#097;&#116;&#104;&#114;&#121;&#110;&#099;&#114;&#111;&#119;&#108;&#101;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
                         </ul>
                     </p>
+                    <h2>
+                        Music choices!</h2>
+                    <p>
+                        We have a DJ booked for the evening entertainment, and would love to know if you
+                        have any particular songs you'd love to hear!</p>
                 </div>
             </div>
-            
             <a href="#" class="btn btn-default arrow" data-slide="7"><span class="glyphicon glyphicon-arrow-down">
             </span></a>
         </div>
         <div id="slide7" class="slide" data-slide="7">
-            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
+            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-8">
                 <div class="jumbotron">
                     <h1>
                         Important Information</h1>
-                    <p>
-                    </p>
-                </div>
-            </div>
-            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
-                <div class="jumbotron">
-                    <h1>
-                    </h1>
+                    <br />
+                    <ul style="font-size: larger">
+                        <li><b>CASH BAR ONLY</b> - so please ensure you have enough with you</li>
+                        <li>We need to have vacated the venue by <b>00:00</b> at the latest!</li>
+                        <li><b>SHUTTLE BUS</b> - We have arranged a 7 seater taxi for the following times:
+                            <ul>
+                                <li class="bold">12:45 - 13:45</li>
+                                <li class="bold">18:00 - 20:00</li>
+                                <li class="bold">22:00 - 00:30</li>
+                            </ul>
+                            This covers any trips made between the venue and the local area (any outside this
+                            will incur a fare!)
+                            <br />
+                            Please let us know if you need a lift by clicking <a class="btn btn-primary btn-large data-slide-link"
+                                data-slide="6">here</a> </li>
+                    </ul>
                 </div>
             </div>
             <a href="#" class="btn btn-default arrow" data-slide="8"><span class="glyphicon glyphicon-arrow-down">
@@ -359,15 +408,31 @@ TN5 7HE
             <div style="margin-top: 70px; opacity: 0.9" class="col-sm-9">
                 <div class="jumbotron">
                     <h1>
-                        Gift Ideas</h1>
+                        Gifts</h1>
                     <p>
+                        Thank you so much for clicking on the link to see our gift list and for your thoughts
+                        to give us a gift to celebrate our marriage.
                     </p>
-                </div>
-            </div>
-            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
-                <div class="jumbotron">
-                    <h1>
-                    </h1>
+                    <p>
+                        We are honoured you will be sharing in our special day. Your presence is our gift!
+                    </p>
+                    <p>
+                        We are in the very privileged position that we already have everything we need for
+                        our home, and so instead we would love it if you helped us to have a wonderful honeymoon
+                        together, to celebrate our marriage and give us some phenomenal memories of a trip
+                        which marks the start of the next chapter of our lives together!
+                    </p>
+                    <p>
+                        We have set up a 'Honey Fund' website so you can help to make our honeymoon the
+                        holiday of a lifetime, and one that we'd be honoured to receive a contribution towards.
+                        Whatever contribution, no matter how big or small will be greatly appreciated! <a
+                            class="reallink" href="http://www.honeyfund.co.uk/wedding/kathandmark">http://www.honeyfund.co.uk/wedding/kathandmark</a>
+                    </p>
+                    <p>
+                        Thank you so mch for your generosity - it really does mean the world to have you
+                        with us on our wedding day!</p>
+                    <p>
+                        Love Kathryn and Mark xx</p>
                 </div>
             </div>
             <a href="#" class="btn btn-default arrow" data-slide="9"><span class="glyphicon glyphicon-arrow-down">
@@ -379,13 +444,38 @@ TN5 7HE
                     <h1>
                         Photos</h1>
                     <p>
+                        We are both very fortunate to have the lovely <a class="reallink" href="http://www.sarareeve.com/">
+                            Sara Reeve</a> as our 'Official Photographer' on our big day!</p>
+                    <p>
+                        As you are all so special to us, we would ideally like a few relaxed group shots,
+                        which Sara will be organising.</p>
+                    <p>
+                        Mark's Brother will also be 'rounding people up' for the formal shots, and then
+                        you can relax!
+                        <br />
+                        The rest of the time, we want the photos to flow naturally!
                     </p>
-                </div>
-            </div>
-            <div style="margin-top: 70px; opacity: 0.9" class="col-sm-3">
-                <div class="jumbotron">
-                    <h1>
-                    </h1>
+                    <p>
+                        And thats where you come in too! <b>Please, please, please</b> take lots of photos
+                        you have taken to capture our day!
+                    </p>
+                    <p>
+                        We would be incredibly grateful if you could email us with any photos you think
+                        we would like!
+                    </p>
+                    <h2>
+                        A bit of fun...</h2>
+                    <p>
+                        We are also planning on holding a photo competition with Mark's travel companions.
+                        
+                        <a class="fancybox-media" href="img/bert_and_ernie.jpg">Bert and Ernie!</a>
+                    </p>
+                    <p>
+                        As many of you may know, they accompanied mark on his travels to Australia in 2013
+                        where he proopsed to Kathryn. So we would like you to take the soft toys, and come
+                        up with the best wedding photo with them involved!
+                    </p>
+                    <p>The best photo will win a mystery prize (probably received after the wedding day!) Just email them to Mark or Kathryn to be in with a chance to win!</p>
                 </div>
             </div>
             <a href="#" class="btn btn-default arrow" data-slide="10"><span class="glyphicon glyphicon-arrow-down">
@@ -447,9 +537,10 @@ TN5 7HE
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/twitter-bootstrap/docs/assets/js/bootstrap.min.js"></script>
     <script src="node_modules/twitter-bootstrap/docs/assets/js/bootstrap-modal.js"></script>
+    <script src="node_modules/fancybox/js/jquery.fancybox.pack.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/app.js"></script>
 </body>
