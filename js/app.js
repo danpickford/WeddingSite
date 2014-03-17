@@ -28,7 +28,7 @@ function goToByScroll(dataslide, mstime) {
 
 function setActivePage(dataslide) {
     $('li').removeClass('active');
-    $('.data-slide-link[data-slide="' + dataslide + '"]').parents('li:last').addClass('active');
+    $('.data-slide-link[data-slide="' + dataslide + '"]', '.nav').parentsUntil('navbar-nav').addClass('active');
 }
 
 
@@ -51,7 +51,7 @@ function init() {
         }
     });
 
-    
+
     //When the user clicks on the button, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
     button.click(function (e) {
         e.preventDefault();
