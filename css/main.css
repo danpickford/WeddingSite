@@ -8,13 +8,13 @@ html
 }
 .jumbotron p
 {
-    font-size:15px;
+    font-size:13px;
 }
 body
 {
     /* Margin bottom by footer height */
     height: 100%;
-    
+    overflow-x:hidden;
 }
 .bold
 {
@@ -55,6 +55,11 @@ body > .container
     margin-left: 0px;
     width: 100%;
     height: 100%;
+}
+.container .jumbotron
+{
+    padding-left:30px;
+    padding-right: 30px;
 }
 
 code
