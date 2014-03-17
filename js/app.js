@@ -39,7 +39,18 @@ function init() {
     htmlbody = $('html,body');
     dataslide = 1;
 
-       //Setup waypoints plugin
+    (function () {
+        var timer;
+        $(window).bind('scroll', function () {
+            clearTimeout(timer);
+            timer = setTimeout(refresh, 1000);
+        });
+        var refresh = function () {
+            goToByScroll(dataslide, 500);
+        };
+    })();
+
+    //Setup waypoints plugin
     slide.waypoint(function (event) {
         //cache the variable of the data-slide attribute associated with each slide
         dataslide = $(this).attr('data-slide');

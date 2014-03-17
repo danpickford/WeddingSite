@@ -74,6 +74,9 @@ code
 {
     background-image: url('../img/background_1.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -84,6 +87,9 @@ code
 {
     background-image: url('../img/background_2.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -93,6 +99,9 @@ code
 {
     background-image: url('../img/background_3.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -102,6 +111,9 @@ code
 {
     background-image: url('../img/background_4.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -111,6 +123,9 @@ code
 {
     background-image: url('../img/background_5.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -120,6 +135,9 @@ code
 {
     background-image: url('../img/background_6.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -129,6 +147,9 @@ code
 {
     background-image: url('../img/background_7.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -138,6 +159,9 @@ code
 {
     background-image: url('../img/background_8.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -147,6 +171,9 @@ code
 {
     background-image: url('../img/background_9.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -156,6 +183,9 @@ code
 {
     background-image: url('../img/background_10.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -165,6 +195,9 @@ code
 {
     background-image: url('../img/background_11.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -174,6 +207,9 @@ code
 {
     background-image: url('../img/background_12.png');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
