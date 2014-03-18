@@ -16,6 +16,22 @@
         }
 
     });
+	
+	$("#submitForm").click(function () {
+        var frm = $('#rsvpform');
+		var data = JSON.stringify(frm.serializeArray());
+		$.ajax({
+            type: "POST",
+            url: "/RSVP",
+            data: data
+        }).done(function (msg) {
+          if (msg == "OK") {
+              alert("Thank you for your rsvp!. We have received your details!");
+          } else {
+              alert("Sorry something went wrong, please try again or get in touch with Mark or Kathryn!");
+          }
+      });
+    });
 });
 
 //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. 
