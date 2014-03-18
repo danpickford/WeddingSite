@@ -19,15 +19,15 @@
     <![endif]-->
 </head>
 <body>
-    <!-- Modal -->
-    <div class="modal fade" id="tableplan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <!-- tableplan Modal -->
+    <div class="modal fade" id="tableplan" tabindex="-1" role="dialog" aria-labelledby="tableplanLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                         &times;</button>
-                    <h4 class="modal-title">
+                    <h4 class="modal-title" id="tableplanLabel">
                         Shhhh....</h4>
                 </div>
                 <div class="modal-body">
@@ -44,6 +44,26 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+    <div class="modal fade" id="feedbackmodal" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;</button>
+                    <h4 class="modal-title" id="feedbackLabel">
+                        Kath and Marks big day!</h4>
+                </div>
+                <div class="modal-body">
+                    Oops something went wrong!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -145,7 +165,6 @@
                     </p>
                 </div>
             </div>
-            
             <a href="#" class="btn btn-default arrow" data-slide="2"><span class="glyphicon glyphicon-arrow-down">
             </span></a>
         </div>
@@ -237,8 +256,7 @@
                         Dress Code</h1>
                     <p>
                         Smart Casual <em>(We're aiming for a relaxed day and want our guests to be comfortable!)</em></p>
-
-                        <h1>
+                    <h1>
                         What to bring</h1>
                     <p>
                         <ul>
@@ -251,7 +269,6 @@
                     </p>
                 </div>
             </div>
-            
             <a href="#" class="btn btn-default arrow" data-slide="4"><span class="glyphicon glyphicon-arrow-down">
             </span></a>
         </div>
@@ -309,21 +326,20 @@ TN5 7HE
                     <h1>
                         RSVP</h1>
                     <p>
-                        Please use the form below to let us know if you can make it!
-                        
-                        <em>please also include any dietary requirements!</em>
+                        Please use the form below to let us know if you can make it! <em>please also include
+                            any dietary requirements!</em>
                     </p>
                     <div style="width: 50%;">
                         <form id="rsvpform" name="rsvpform" role="form">
                         <div class="form-group">
                             <label for="name">
                                 Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
                         </div>
                         <div class="form-group">
                             <label for="contact">
                                 Contact number/Email</label>
-                            <input type="text" class="form-control" id="contact" placeholder="Enter a contact number or email address!">
+                            <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter a contact number or email address!">
                         </div>
                         <div class="form-group">
                             <label for="message">
@@ -604,7 +620,6 @@ TN5 7HE </pre>
                         <li>LONG DISTANCE CARS- 01273 581581</li>
                         <li>MTC CABS – 01580 890003</li>
                         <li>ROBERTSBRIDGE CARS - 01580 880988</li>
-                        
                     </ul>
                 </div>
             </div>
@@ -612,9 +627,7 @@ TN5 7HE </pre>
                 <div class="jumbotron">
                     <h1>
                         Taxis #2</h1>
-                    
                     <ul>
-                       
                         <li>RSA (Frant) – 07837 064853</li>
                         <li>TAYLORS (Tunbridge Wells) 01892 -535353</li>
                         <li>TAXI SERVICE 07783 194635</li>
@@ -638,7 +651,6 @@ TN5 7HE </pre>
     <script src="node_modules/fancybox/js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.easing.js"></script>
     <script src="js/iscroll-lite.js"></script>
-    
     <script src="js/waypoints.min.js"></script>
     <script src="js/app.js"></script>
 </body>

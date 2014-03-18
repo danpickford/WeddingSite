@@ -1,4 +1,21 @@
-﻿$(function () {
+﻿
+$.fn.serializeObject = function () {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function () {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+
+$(function () {
     init();
 
     $(".reallink").click(function (e) {
@@ -16,21 +33,30 @@
         }
 
     });
-	
-	$("#submitForm").click(function () {
+
+    $("#submitForm").click(function () {
         var frm = $('#rsvpform');
-		var data = JSON.stringify(frm.serializeArray());
-		$.ajax({
+        var data = JSON.stringify(frm.serializeObject());
+        $.ajax({
             type: "POST",
             url: "/RSVP",
             data: data
-        }).done(function (msg) {
-          if (msg == "OK") {
-              alert("Thank you for your rsvp!. We have received your details!");
-          } else {
-              alert("Sorry something went wrong, please try again or get in touch with Mark or Kathryn!");
-          }
-      });
+        }).success(function (data, textStatus, jqXHR) {
+            $feedback = $('#feedbackmodal');
+            if (data == "OK") {
+                $('.btn', '#feedbackmodal').addClass('btn-success');
+                $('.modal-body', $feedback).html("Thank you for your rsvp!. We have received your details!");
+            } else {
+                $('.btn', '#feedbackmodal').addClass('btn-danger');
+                $('.modal-body', $feedback).html("Sorry something went wrong!<br/>Please try again or get in touch with Mark or Kathryn!");
+            }
+            $feedback.modal('show');
+        }).error(function (data, textStatus, jqXHR) {
+            $feedback = $('#feedbackmodal');
+            $('.modal-body', $feedback).html("Sorry something went wrong!<br/>Please try again or get in touch with Mark or Kathryn!");
+            $('.btn', $feedback).addClass('btn-danger');
+            $feedback.modal('show');
+        });
     });
 });
 
