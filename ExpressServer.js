@@ -18,7 +18,7 @@ app.post("/RSVP", function (req, res, next) {
     body = body + "\nMessage: " + req.body.message + " .";
     body = body + "\ndiet:" + req.body.diet + ". Dan rulez!";
 
-    var mg = new _mg.Mailgun('key-8a1x89r8m7axjuym-3ruifs119-u2qn4');
+    var mg = new _mg.Mailgun('key-453l9v4j7iwlj9szikhpsf56bl-zjbj1');
     mg.sendText('rsvp@markandkathsbigday.co.uk', ['kathryncrowle@hotmail.com', 'harrisonmeister@gmail.com'],
          req.body.name + ' has RSVPd.', body,
          { 'X-Campaign-Id': 'newQuotes' },
