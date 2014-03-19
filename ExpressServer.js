@@ -22,7 +22,7 @@ app.post("/RSVP", function (req, res, next) {
     mg.sendText('rsvp@markandkathsbigday.co.uk', ['kathryncrowle@hotmail.com', 'harrisonmeister@gmail.com'],
     //mg.sendText('rsvp@markandkathsbigday.co.uk', ['idaniel.pickford@gmail.com'],
          req.body.name + ' has RSVPd.', body,
-         { 'X-Campaign-Id': 'newQuotes' },
+         { 'X-Campaign-Id': 'weddingRSVP' },
          function (err) { err && console.log(err); });
 
     res.send(200);

@@ -36,7 +36,7 @@ $(function () {
 
     $("#submitForm").click(function () {
         var frm = $('#rsvpform');
-        var data = JSON.stringify(frm.serializeObject());
+        var data = frm.serializeObject();
         $.ajax({
             type: "POST",
             url: "/RSVP",
@@ -62,7 +62,7 @@ $(function () {
 
 //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. 
 function goToByScroll(dataslide, mstime) {
-    $('html,body').animate({
+	$('html,body').animate({
         scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
     }, mstime);
     setActivePage(dataslide);
@@ -80,22 +80,25 @@ function init() {
     mywindow = $(window);
     htmlbody = $('html,body');
     dataslide = 1;
-
-    (function () {
-        var timer;
-        $(window).bind('scroll', function () {
-            clearTimeout(timer);
-            timer = setTimeout(refresh, 1000);
-        });
-        var refresh = function () {
-            goToByScroll(dataslide, 500);
-        };
-    })();
+	var isMobile = (/android|mobile|nexus|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+    
+	if(!isMobile) {
+		(function () {
+			var timer;
+			$(window).bind('scroll', function () {
+				clearTimeout(timer);
+				timer = setTimeout(refresh, 1000);
+			});
+			var refresh = function () {
+				goToByScroll(dataslide, 500);
+			};
+		})();
+	}
 
     //Setup waypoints plugin
     slide.waypoint(function (event) {
         //cache the variable of the data-slide attribute associated with each slide
-        dataslide = $(this).attr('data-slide');
+        dataslide = parseInt($(this).attr('data-slide'));
         if (event === 'up') {
             if (dataslide - 1 == 0) {
                 dataslide = 1;
@@ -104,6 +107,23 @@ function init() {
             }
         }
     });
+	
+	$(document).keydown(function(e) {
+		var waypoint = 1;
+		// Up
+		if (e.keyCode==38) {
+			waypoint=parseInt(dataslide);
+			if (waypoint==0) { waypoint=1;}
+			goToByScroll(waypoint-1,500)
+		}
+		// Down
+		if (e.keyCode==40) {
+			waypoint=parseInt(dataslide);	
+			if( waypoint < 12) {
+				goToByScroll(waypoint+1,500)
+			}
+		}
+	});
 
 
     //When the user clicks on the button, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
