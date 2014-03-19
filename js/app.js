@@ -39,7 +39,7 @@ $(function () {
         var data = frm.serializeObject();
         $.ajax({
             type: "POST",
-            url: "http://www.pristinecleaningsussex.co.uk/RSVP/",
+            url: "http://www.kathandmarksbigday.com/RSVP/",
             data: data
         }).success(function (data, textStatus, jqXHR) {
             $feedback = $('#feedbackmodal');
