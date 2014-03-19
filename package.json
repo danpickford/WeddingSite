@@ -1,0 +1,28 @@
+{
+  "name": "KathandMarksBigDay",
+  "version": "1.0.0",
+  "description": "Wedding website for guests invited to K&M wedding.",
+  "main": "ExpressServer.js",
+  "dependencies": {
+    "easing": "~0.0.4",
+    "express": "~3.4.8",
+    "jquery": "~2.1.0",
+    "mailgun": "~0.4.2",
+    "twitter-bootstrap": "~2.1.1",
+    "winston": "~0.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danpickford/WeddingSite.git"
+  },
+  "author": "Mark Harrison and Daniel Pickford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danpickford/WeddingSite/issues"
+  },
+  "homepage": "https://github.com/danpickford/WeddingSite"
+}
