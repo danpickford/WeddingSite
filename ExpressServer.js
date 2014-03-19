@@ -1,18 +1,33 @@
 var express = require('express'),
-				easing = require('easing'),
-				winston = require('winston');
+    app = express();
 
-var app = express();
+var _mg = require('mailgun');
 
 app.use(express.static(__dirname + '/'));
 app.configure(function () {
     app.use(express.bodyParser());
 });
 
-var port = Number(process.env.PORT || 5000);
-app.listen(port, function() {
-  winston.log("Listening on " + port);
-  console.log("Listening on " + port);
+app.post("/RSVP", function (req, res, next) {
+    var currentdate = new Date();
+
+    console.log("RSVP for " + req.body.name + " " + req.body.lastname + " date: " + currentdate);
+
+    var body = req.body.name + " has RSVPd with the following infomation.";
+    body = body + "\nContact: " + req.body.contact + " .";
+    body = body + "\nMessage: " + req.body.message + " .";
+    body = body + "\ndiet:" + req.body.diet + ". Dan rulez!";
+
+    var mg = new _mg.Mailgun('key-8a1x89r8m7axjuym-3ruifs119-u2qn4');
+    mg.sendText('rsvp@markandkathsbigday.co.uk', ['kathryncrowle@hotmail.com', 'harrisonmeister@gmail.com'],
+         req.body.name + ' has RSVPd.', body,
+         { 'X-Campaign-Id': 'newQuotes' },
+         function (err) { err && console.log(err); });
+
+    res.send(200);
 });
 
-exports = module.exports = app;
+var port = Number(process.env.PORT || 5000);
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
