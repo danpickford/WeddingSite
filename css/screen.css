@@ -14,20 +14,10 @@ body
 {
     /* Margin bottom by footer height */
     height: 100%;
-    overflow-x: hidden;
 }
 .bold
 {
     font-weight: bold;
-}
-
-#footer
-{
-    position: absolute;
-    bottom: 0;
-    width: 100%; /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #f5f5f5;
 }
 
 .jumbotron
@@ -61,6 +51,7 @@ body > .container
     margin-right: 0px;
     margin-left: 0px;
     width: 100%;
+    min-width:1250px;
     height: 100%;
 }
 .container .jumbotron
@@ -90,9 +81,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 
 #slide2
@@ -103,9 +91,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide3
 {
@@ -115,9 +100,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide4
 {
@@ -127,9 +109,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide5
 {
@@ -139,9 +118,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide6
 {
@@ -151,9 +127,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide7
 {
@@ -163,9 +136,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide8
 {
@@ -175,9 +145,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide9
 {
@@ -187,9 +154,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide10
 {
@@ -199,9 +163,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide11
 {
@@ -211,9 +172,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 #slide12
 {
@@ -223,9 +181,6 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
 }
 .arrow
 {

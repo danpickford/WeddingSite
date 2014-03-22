@@ -96,20 +96,20 @@ function init() {
     mywindow = $(window);
     htmlbody = $('html,body');
     dataslide = 1;
-    var isMobile = (/android|mobile|nexus|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+//    var isMobile = (/android|mobile|nexus|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
 
-    if (!isMobile) {
-        (function () {
-            var timer;
-            $(window).bind('scroll', function () {
-                clearTimeout(timer);
-                timer = setTimeout(refresh, 1000);
-            });
-            var refresh = function () {
-                goToByScroll(dataslide, 500);
-            };
-        })();
-    }
+//    if (!isMobile) {
+//        (function () {
+//            var timer;
+//            $(window).bind('scroll', function () {
+//                clearTimeout(timer);
+//                timer = setTimeout(refresh, 1000);
+//            });
+//            var refresh = function () {
+//                goToByScroll(dataslide, 500);
+//            };
+//        })();
+//    }
 
     //Setup waypoints plugin
     slide.waypoint(function (event) {
