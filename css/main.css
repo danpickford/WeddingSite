@@ -8,13 +8,13 @@ html
 }
 .jumbotron p
 {
-    font-size:13px;
+    font-size: 13px;
 }
 body
 {
     /* Margin bottom by footer height */
     height: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 .bold
 {
@@ -39,7 +39,14 @@ body
     font-size: 38px;
 }
 
-
+.error
+{
+    color: Red;
+}
+input.error, textarea.error
+{
+    border: 1px dotted red;
+}
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -58,7 +65,7 @@ body > .container
 }
 .container .jumbotron
 {
-    padding-left:30px;
+    padding-left: 30px;
     padding-right: 30px;
 }
 

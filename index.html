@@ -330,7 +330,7 @@ TN5 7HE
                             any dietary requirements!</em>
                     </p>
                     <div style="width: 50%;">
-                        <form id="rsvpform" name="rsvpform" role="form">
+                        <form id="rsvpform" action="RSVP" name="rsvpform" role="form" method="post">
                         <div class="form-group">
                             <label for="name">
                                 Name</label>
@@ -353,8 +353,7 @@ TN5 7HE
                             <textarea id="diet" name="diet" placeholder="Enter any dietary requirements" class="form-control"
                                 rows="2"></textarea>
                         </div>
-                        <button id="submitForm" type="submit" class="btn btn-default">
-                            Submit</button>
+                        <input type="submit" id="submitForm" type="submit" class="btn btn-default" value="Submit" />
                         </form>
                     </div>
                 </div>
@@ -646,6 +645,7 @@ TN5 7HE </pre>
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery/dist/jquery.validate.min.js"></script>
     <script src="node_modules/twitter-bootstrap/docs/assets/js/bootstrap.min.js"></script>
     <script src="node_modules/twitter-bootstrap/docs/assets/js/bootstrap-modal.js"></script>
     <script src="node_modules/fancybox/js/jquery.fancybox.pack.js"></script>

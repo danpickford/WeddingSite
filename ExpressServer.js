@@ -11,17 +11,17 @@ app.configure(function () {
 app.post("/RSVP", function (req, res, next) {
     var currentdate = new Date();
 
-    console.log("RSVP for " + req.body.name + " " + req.body.lastname + " date: " + currentdate);
+    console.log("RSVP for " + req.body.name + " date: " + currentdate);
 
-    var body = req.body.name + " has RSVPd with the following infomation.";
-    body = body + "\nContact: " + req.body.contact + " .";
-    body = body + "\nMessage: " + req.body.message + " .";
-    body = body + "\ndiet:" + req.body.diet + ". Dan rulez!";
+    var body = req.body.name + " has RSVP'd from kathandmarksbigday.com with the following infomation:";
+    body = body + "\n\nName: " + req.body.name;
+    body = body + "\n\nContact: " + req.body.contact;
+    body = body + "\n\nMessage: " + req.body.message;
+    body = body + "\n\nDietary Requirements: " + req.body.diet;
 
     var mg = new _mg.Mailgun('key-453l9v4j7iwlj9szikhpsf56bl-zjbj1');
     mg.sendText('rsvp@markandkathsbigday.co.uk', ['kathryncrowle@hotmail.com', 'harrisonmeister@gmail.com'],
-    //mg.sendText('rsvp@markandkathsbigday.co.uk', ['idaniel.pickford@gmail.com'],
-         req.body.name + ' has RSVPd.', body,
+             req.body.name + ' has RSVPd!', body,
          { 'X-Campaign-Id': 'weddingRSVP' },
          function (err) { err && console.log(err); });
 
