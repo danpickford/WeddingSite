@@ -51,7 +51,6 @@ body > .container
     margin-right: 0px;
     margin-left: 0px;
     width: 100%;
-    min-width:1250px;
     height: 100%;
 }
 .container .jumbotron
@@ -81,6 +80,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 817px;
 }
 
 #slide2
@@ -91,6 +92,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1225px;
+    min-height: 816px;
 }
 #slide3
 {
@@ -100,6 +103,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1225px;
+    min-height: 919px;
 }
 #slide4
 {
@@ -109,6 +114,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 817px;
 }
 #slide5
 {
@@ -118,6 +125,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 817px;
 }
 #slide6
 {
@@ -127,6 +136,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 920px;
 }
 #slide7
 {
@@ -136,6 +147,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 817px;
 }
 #slide8
 {
@@ -145,6 +158,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 920px;
 }
 #slide9
 {
@@ -154,6 +169,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 920px;
 }
 #slide10
 {
@@ -163,6 +180,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 920px;
 }
 #slide11
 {
@@ -172,6 +191,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 920px;
 }
 #slide12
 {
@@ -181,6 +202,8 @@ code
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-width: 1226px;
+    min-height: 920px;
 }
 .arrow
 {
