@@ -1,5 +1,10 @@
 ﻿/* Sticky footer styles
 -------------------------------------------------- */
+@font-face
+{
+    font-family: LeagueGothic;
+    src: url(../fonts/leaguegothic-condensed-regular-webfont.woff);
+}
 html
 {
     position: relative;
@@ -26,7 +31,7 @@ body
 }
 .jumbotron h1
 {
-    font-size: 38px;
+    font-family:LeagueGothic;
 }
 
 .error
