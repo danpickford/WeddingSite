@@ -17,6 +17,7 @@ app.post("/RSVP", function (req, res, next) {
     body = body + "\n\nName: " + req.body.name;
     body = body + "\n\nContact: " + req.body.contact;
     body = body + "\n\nMessage: " + req.body.message;
+    body = body + "\n\nMusic: " + req.body.music;
     body = body + "\n\nDietary Requirements: " + req.body.diet;
 
     var mg = new _mg.Mailgun('key-453l9v4j7iwlj9szikhpsf56bl-zjbj1');
