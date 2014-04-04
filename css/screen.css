@@ -32,6 +32,7 @@ body
 .jumbotron h1
 {
     font-family:LeagueGothic;
+    font-size: 55px;
 }
 
 .error
